@@ -1,0 +1,15 @@
+artifact_uri: file:///home/maramaram/Maram-Bouaziz-4DS5-ml_project/mlruns/548161257888343125/14e134822a944001844339bb54d23327/artifacts
+end_time: 1739467745956
+entry_point_name: ''
+experiment_id: '548161257888343125'
+lifecycle_stage: active
+run_id: 14e134822a944001844339bb54d23327
+run_name: suave-mink-304
+run_uuid: 14e134822a944001844339bb54d23327
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739467743529
+status: 3
+tags: []
+user_id: maramaram

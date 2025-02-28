@@ -1,0 +1,15 @@
+artifact_uri: file:///home/maramaram/Maram-Bouaziz-4DS5-ml_project/mlruns/548161257888343125/370a6523958a4455aa9930ff8745d920/artifacts
+end_time: 1739467541066
+entry_point_name: ''
+experiment_id: '548161257888343125'
+lifecycle_stage: active
+run_id: 370a6523958a4455aa9930ff8745d920
+run_name: youthful-shrew-886
+run_uuid: 370a6523958a4455aa9930ff8745d920
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739467538884
+status: 3
+tags: []
+user_id: maramaram

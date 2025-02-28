@@ -1,0 +1,15 @@
+artifact_uri: file:///home/maramaram/Maram-Bouaziz-4DS5-ml_project/mlruns/548161257888343125/76253d9b088a4241903473497de372d4/artifacts
+end_time: 1739467486473
+entry_point_name: ''
+experiment_id: '548161257888343125'
+lifecycle_stage: active
+run_id: 76253d9b088a4241903473497de372d4
+run_name: bald-swan-859
+run_uuid: 76253d9b088a4241903473497de372d4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739467484293
+status: 3
+tags: []
+user_id: maramaram

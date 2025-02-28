@@ -1,0 +1,6 @@
+artifact_location: file:///home/maramaram/Maram-Bouaziz-4DS5-ml_project/mlruns/548161257888343125
+creation_time: 1739019679644
+experiment_id: '548161257888343125'
+last_update_time: 1739019679644
+lifecycle_stage: active
+name: Churn Prediction with AdaBoost

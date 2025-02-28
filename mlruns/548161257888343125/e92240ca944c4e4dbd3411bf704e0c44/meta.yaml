@@ -1,0 +1,15 @@
+artifact_uri: file:///home/maramaram/Maram-Bouaziz-4DS5-ml_project/mlruns/548161257888343125/e92240ca944c4e4dbd3411bf704e0c44/artifacts
+end_time: 1739443614165
+entry_point_name: ''
+experiment_id: '548161257888343125'
+lifecycle_stage: active
+run_id: e92240ca944c4e4dbd3411bf704e0c44
+run_name: hilarious-yak-445
+run_uuid: e92240ca944c4e4dbd3411bf704e0c44
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739443611783
+status: 3
+tags: []
+user_id: maramaram

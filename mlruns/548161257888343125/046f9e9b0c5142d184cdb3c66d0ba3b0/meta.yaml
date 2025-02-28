@@ -1,0 +1,15 @@
+artifact_uri: file:///home/maramaram/Maram-Bouaziz-4DS5-ml_project/mlruns/548161257888343125/046f9e9b0c5142d184cdb3c66d0ba3b0/artifacts
+end_time: 1739468940763
+entry_point_name: ''
+experiment_id: '548161257888343125'
+lifecycle_stage: active
+run_id: 046f9e9b0c5142d184cdb3c66d0ba3b0
+run_name: industrious-doe-878
+run_uuid: 046f9e9b0c5142d184cdb3c66d0ba3b0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739468938245
+status: 3
+tags: []
+user_id: maramaram

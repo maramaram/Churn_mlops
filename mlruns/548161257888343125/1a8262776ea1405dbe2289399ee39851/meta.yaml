@@ -1,0 +1,15 @@
+artifact_uri: file:///home/maramaram/Maram-Bouaziz-4DS5-ml_project/mlruns/548161257888343125/1a8262776ea1405dbe2289399ee39851/artifacts
+end_time: 1739467762607
+entry_point_name: ''
+experiment_id: '548161257888343125'
+lifecycle_stage: active
+run_id: 1a8262776ea1405dbe2289399ee39851
+run_name: nervous-jay-73
+run_uuid: 1a8262776ea1405dbe2289399ee39851
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739467762603
+status: 3
+tags: []
+user_id: maramaram

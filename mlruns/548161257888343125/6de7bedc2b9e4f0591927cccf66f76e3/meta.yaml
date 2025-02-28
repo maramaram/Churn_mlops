@@ -1,0 +1,15 @@
+artifact_uri: file:///home/maramaram/Maram-Bouaziz-4DS5-ml_project/mlruns/548161257888343125/6de7bedc2b9e4f0591927cccf66f76e3/artifacts
+end_time: 1739467150021
+entry_point_name: ''
+experiment_id: '548161257888343125'
+lifecycle_stage: active
+run_id: 6de7bedc2b9e4f0591927cccf66f76e3
+run_name: traveling-shoat-576
+run_uuid: 6de7bedc2b9e4f0591927cccf66f76e3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739467150016
+status: 3
+tags: []
+user_id: maramaram
