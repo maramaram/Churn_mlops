@@ -94,8 +94,19 @@ jobs:
         with:
           name: trained_model
 
+      - name: 🚀 Démarrer MLflow
+        run: |
+          nohup mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./mlruns --host 127.0.0.1 --port 5000 &
+          sleep 10  # Attendre que MLflow démarre
+
+      - name: 🔄 Vérifier MLflow
+        run: |
+          curl -I http://127.0.0.1:5000/api/2.0/mlflow/experiments/list || (echo "❌ MLflow n'est pas disponible" && exit 1)
+
       - name: 🧪 Tester le modèle
-        run: python main.py --evaluate
+        run: |
+          export MLFLOW_TRACKING_URI=http://127.0.0.1:5000
+          python main.py --evaluate
 
   deploy_api:
     runs-on: ubuntu-latest
