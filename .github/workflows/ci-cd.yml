@@ -9,8 +9,8 @@ on:
       - main
   workflow_dispatch: # Permet de lancer le workflow manuellement
 
-jobs:
-  preprocess_data:
+jobs:  
+preprocess_data:
     runs-on: ubuntu-latest
     steps:
       - name: 📥 Cloner le dépôt
@@ -24,8 +24,16 @@ jobs:
       - name: 📦 Installer les packages nécessaires
         run: pip install -r requirements.txt
 
+      - name: 🚀 Démarrer MLflow
+        run: |
+          nohup mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./mlruns --host 127.0.0.1 --port 5000 &
+          sleep 10  # Attendre que MLflow démarre
+
       - name: 🔄 Exécuter le prétraitement des données
-        run: python main.py --prepare
+        run: |
+          export MLFLOW_TRACKING_URI=http://127.0.0.1:5000
+          python main.py --prepare
+
 
   train_model:
     runs-on: ubuntu-latest
