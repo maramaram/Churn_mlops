@@ -10,7 +10,7 @@ on:
   workflow_dispatch: # Permet de lancer le workflow manuellement
 
 jobs:  
-preprocess_data:
+  preprocess_data:
     runs-on: ubuntu-latest
     steps:
       - name: 📥 Cloner le dépôt
