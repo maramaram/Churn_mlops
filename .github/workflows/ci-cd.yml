@@ -29,6 +29,10 @@ jobs:
           nohup mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./mlruns --host 127.0.0.1 --port 5000 &
           sleep 10  # Attendre que MLflow démarre
 
+      - name: 🔄 Vérifier MLflow
+        run: |
+          curl -I http://127.0.0.1:5000/api/2.0/mlflow/experiments/list || (echo "❌ MLflow n'est pas disponible" && exit 1)
+
       - name: 🔄 Exécuter le prétraitement des données
         run: |
           export MLFLOW_TRACKING_URI=http://127.0.0.1:5000
@@ -50,14 +54,25 @@ jobs:
       - name: 📦 Installer les packages nécessaires
         run: pip install -r requirements.txt
 
+      - name: 🚀 Démarrer MLflow
+        run: |
+          nohup mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./mlruns --host 127.0.0.1 --port 5000 &
+          sleep 10  # Attendre que MLflow démarre
+
+      - name: 🔄 Vérifier MLflow
+        run: |
+          curl -I http://127.0.0.1:5000/api/2.0/mlflow/experiments/list || (echo "❌ MLflow n'est pas disponible" && exit 1)
+
       - name: 🎯 Entraîner le modèle
-        run: python main.py --train
+        run: |
+          export MLFLOW_TRACKING_URI=http://127.0.0.1:5000
+          python main.py --train
 
       - name: 💾 Sauvegarder le modèle
         uses: actions/upload-artifact@v4
         with:
           name: trained_model
-          path: random_forest_model.pkl
+          path: model.pkl
 
   test_model:
     runs-on: ubuntu-latest
@@ -104,3 +119,4 @@ jobs:
 
       - name: 🚀 Lancer l'API FastAPI
         run: uvicorn app:app --host 0.0.0.0 --port 8000 &
+
